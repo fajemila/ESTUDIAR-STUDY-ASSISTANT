@@ -5,3 +5,4 @@ streamlit-chat
 python-dotenv
 PyPDF2
 bokeh
+streamlit-bokeh-events
