@@ -8,3 +8,4 @@ bokeh
 streamlit-bokeh-events
 gTTS
 python-docx
+faiss-cpu
