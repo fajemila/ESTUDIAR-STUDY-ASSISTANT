@@ -7,3 +7,4 @@ PyPDF2
 bokeh
 streamlit-bokeh-events
 gTTS
+python-docx
