@@ -4,3 +4,4 @@ streamlit-option-menu
 streamlit-chat
 python-dotenv
 PyPDF2
+bokeh
