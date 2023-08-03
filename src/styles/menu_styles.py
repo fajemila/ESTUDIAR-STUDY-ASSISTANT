@@ -13,7 +13,7 @@ HEADER_STYLES: Dict[str, Dict] = {
         "font-size": "14px",
         "text-align": "center",
         "margin": "auto",
-        "background-color": "#2C3333",
+        "background-color": "#2E4F4F",
         "height": "30px",
         "width": "8rem",
         "color": "#CBE4DE",
