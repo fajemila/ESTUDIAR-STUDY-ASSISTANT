@@ -60,19 +60,21 @@ class QuestionGenerator:
             question = match.group(1).strip()
             options = [option.strip() for option in match.group(2).split('\n')]
             answer = match.group(3).strip()
+            dictionary = {'question': question, 'options': options, 'answer': answer}
+            dictionary['options'] = list(filter(None, dictionary['options']))
+
+            dictionary['answer'] = answer[answer.find("(")+1:answer.find(")")]
+            dictionary['options'] = {option[:4].strip().replace(")","").replace("(",""): option[4:] for option in dictionary['options']}
+            return dictionary
         except:
             st.write("Try Again")
             question = None
             options = None
             answer = None
+            
+            return False
 
-        dictionary = {'question': question, 'options': options, 'answer': answer}
-        dictionary['options'] = list(filter(None, dictionary['options']))
-        print(answer)
-        dictionary['answer'] = answer[answer.find("(")+1:answer.find(")")]
-        # dictionary['answer'] = anspattern[0]
-        dictionary['options'] = {option[:4].strip().replace(")","").replace("(",""): option[4:] for option in dictionary['options']}
-        return dictionary
+
     
     def str_dict(self, str_):
         pattern = re.compile(r"QUESTION:\s*(.+)\nANSWER:\s*(.+)")
@@ -80,13 +82,15 @@ class QuestionGenerator:
         try:
             question = match.group(1).strip()
             answer = match.group(2).strip()
+            dictionary = {'question': question, 'answer': answer}
+            return dictionary
         except:
             st.write("Try Again")
             question = None
             answer = None
+            return False
             
-        dictionary = {'question': question, 'answer': answer}
-        return dictionary
+
     
     def test_string_dict(self, dictionary):
         try:
