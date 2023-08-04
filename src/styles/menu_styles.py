@@ -5,7 +5,7 @@ HEADER_STYLES: Dict[str, Dict] = {
         "padding": "0px",
         "display": "grid",
         # "margin": "0!important",
-        "background-color": "#2C3333",
+        "background-color": "#2E4F4F",
         
     },
     "icon": {"color": "#CBE4DE", "font-size": "14px"},
