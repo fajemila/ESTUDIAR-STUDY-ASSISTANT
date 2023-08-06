@@ -67,11 +67,10 @@ class QuestionGenerator:
             dictionary['options'] = {option[:4].strip().replace(")","").replace("(",""): option[4:] for option in dictionary['options']}
             return dictionary
         except:
-            st.write("Try Again")
             question = None
             options = None
             answer = None
-            
+
             return False
 
 
@@ -103,8 +102,6 @@ class QuestionGenerator:
 
             return dictionary
         except:
-            print("NOT PASSING")
-            print(dictionary)
             return False
 
     def test_str_dict(self, dictionary):
