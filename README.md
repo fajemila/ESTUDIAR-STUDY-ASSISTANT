@@ -16,20 +16,20 @@ To get started with Estudiardotai, follow these installation instructions:
 2. **Navigate to the Directory:** Move into the cloned repository's directory:
 
    \`\`\`bash
-   cd estudiardotai
+   cd ESTUDIAR-STUDY-ASSISTANT
    \`\`\`
 
 3. **Install Dependencies:** Install the required dependencies using the provided \`requirements.txt\` file. This ensures that you have all the necessary packages to run the application:
 
-   \`\`\`bash
+   ```bash
    pip install -r requirements.txt
-   \`\`\`
+   ```
 
 4. **Run the Application:** Now you're ready to run Estudiardotai! Execute the main application script to launch the assistant:
 
-   \`\`\`bash
-   python main.py
-   \`\`\`
+   ```bash
+   stream run app.py
+   ```
 
 5. **Access the Application:** Open your web browser and go to \`http://localhost:8000\` to access the Estudiardotai user interface. You're all set to start using the various study assistant features!
 
